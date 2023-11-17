@@ -1,0 +1,128 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.glass-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+}
+
+.menus {
+    display: flex;
+    gap: 60px;
+    color: #fff;
+}
+
+.menu {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    text-shadow: 4px 4px 8px #000; /* Aumenta a intensidade da sombra ao redor das palavras */
+}
+
+.menu:hover {
+    color: #3498db;
+}
+
+.submenu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    display: none;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    width: max-content;
+    color: #fff;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+    text-shadow: 4px 4px 8px #000; /* Aumenta a intensidade da sombra ao redor das palavras */
+}
+
+.submenu a:hover {
+    color: #3498db;
+}
+
+.menu1:hover .submenu {
+    display: flex;
+}
+
+.menu2:hover .submenu {
+    display: flex;
+}
+
+.menu3:hover .submenu {
+    display: flex;
+}
+
+.center-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo-login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-login-container .logo {
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adiciona sombra à logo */
+}
+
+.login-button {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    text-shadow: 4px 4px 8px #000; /* Aumenta a intensidade da sombra ao redor da palavra "login" */
+}
+
+.login-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}

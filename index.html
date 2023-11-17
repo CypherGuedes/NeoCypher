@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo Cypher App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/imagemTelaInicial.jpg" alt="imagemTelaInicial">
+
+        <!-- Adiciona a imagem da logo e o botão no centro da página -->
+        <div class="center-container">
+            <div class="logo-login-container">
+                <img src="images/logoNeoCypher.png" alt="Logo da Empresa" class="logo">
+                <button class="login-button">Login</button>
+            </div>
+        </div>
+
+        <div class="glass-container">
+            <div class="menus">
+                <div class="menu menu1" onmouseover="showSubMenu('menu1')" onmouseout="hideSubMenu('menu1')">
+                    <span>Nossa Empresa</span>
+                    <div class="submenu" id="menu1">
+                        <a href="#">Sobre nós</a>
+                        <a href="#">Central de ajuda</a>
+                        <a href="#">Fale conosco</a>
+                    </div>
+                </div>
+
+                <div class="menu menu2" onmouseover="showSubMenu('menu2')" onmouseout="hideSubMenu('menu2')">
+                    <span>Nossos Produtos</span>
+                    <div class="submenu" id="menu2">
+                        <a href="#">Neo Home (casa)</a>
+                        <a href="#">Neo Village (condomínio)</a>
+                        <a href="#">Neo Company (empresa)</a>
+                    </div>
+                </div>
+
+                <div class="menu menu3" onmouseover="showSubMenu('menu3')" onmouseout="hideSubMenu('menu3')">
+                    <span>Nossos Planos</span>
+                    <div class="submenu" id="menu3">
+                        <a href="#">Plano Free (gratuito)</a>
+                        <a href="#">Plano Standard (básico)</a>
+                        <a href="#">Plano Premium (completo)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
